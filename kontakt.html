@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellung – Doris Egli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-contact">
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="arbeit.html">Meine Arbeiten</a>
+        <a href="uebermich.html">Über mich</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+</nav>
+
+<header class="work-header">
+    <div class="work-header-content">
+        <h2>Bestellung & Anfrage</h2>
+        <div class="divider"></div>
+        <p>Jedes Stück ein Unikat, mit Liebe zum Detail gefertigt.</p>
+    </div>
+</header>
+
+<section class="contact-section">
+    <div class="contact-grid">
+        
+        <div class="form-wrapper">
+            <form action="https://formspree.io/f/xvzvplbp" method="POST">
+                
+                <input type="hidden" name="_next" value="success.html">
+                <input type="hidden" name="_subject" value="Neue Karten-Bestellung von deiner Webseite">
+
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Vor- und Nachname" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-Mail Adresse</label>
+                    <input type="email" id="email" name="Email" placeholder="deine@email.ch" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="karte">Art der Karte</label>
+                    <select id="karte" name="Karten-Typ">
+                        <option value="Geburtstag">Geburtstag</option>
+                        <option value="Hochzeit">Hochzeit</option>
+                        <option value="Trauer">Trauer</option>
+                        <option value="Individuell">Individuelle Spezialanfertigung</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="text">Deine Wünsche / Nachricht</label>
+                    <textarea id="text" name="Nachricht" rows="5" placeholder="Beschreibe mir hier deine Vorstellungen..."></textarea>
+                </div>
+
+                <input type="text" name="_gotcha" style="display:none">
+
+                <button type="submit" class="submit-btn">Bestellung senden</button>
+            </form>
+        </div>
+
+        <div class="contact-sidebar">
+            <div class="info-card arch-up">
+                <h3>Handgemacht für dich</h3>
+                <p>Ich freue mich darauf, eine ganz persönliche Karte für dich zu gestalten.</p>
+                <hr>
+                <p><strong>Region:</strong> Rothenburg, LU</p>
+                <p><small>Nach dem Absenden erhältst du so schnell wie möglich eine Antwort von mir.</small></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Doris Egli – Handgefertigt in Rothenburg</p>
+</footer>
+
+</body>
+</html>
